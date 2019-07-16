@@ -20,7 +20,7 @@ def serverTestCmd(argv):
 
     #listen for connection
     server_socket.listen (1)
-    tls_server = wrap_socket(server_socket, ssl_version=PROTOCOL_TLSv1, cert_reqs=CERT_NONE, server_side=True, keyfile='../../tlslite-ng/tests/serverX509Key.pem', certfile='../../tlslite-ng/tests/serverX509Cert.pem')
+    tls_server = wrap_socket(server_socket, ssl_version=PROTOCOL_TLSv1, cert_reqs=CERT_NONE, server_side=True, keyfile='./tests/serverX509Key.pem', certfile='./tests/serverX509Cert.pem')
 
     print('server started')
 
